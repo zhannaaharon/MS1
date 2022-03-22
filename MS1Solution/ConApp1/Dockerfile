@@ -8,8 +8,8 @@
 #COPY ["ConApp1/ConApp1.csproj", "ConApp1/"]
 #RUN dotnet restore "ConApp1/ConApp1.csproj"
 #COPY . .
-3WORKDIR "/src/ConApp1"
-3RUN dotnet build "ConApp1.csproj" -c Release -o /app/build
+#WORKDIR "/src/ConApp1"
+#RUN dotnet build "ConApp1.csproj" -c Release -o /app/build
 
 #FROM build AS publish
 #RUN dotnet publish "ConApp1.csproj" -c Release -o /app/publish
